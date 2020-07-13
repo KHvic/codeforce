@@ -8,7 +8,7 @@ int main(){
     int a[maxn],b[maxn],n,m;
     ll res=1;
 	int l,r;
-	scanf("%d %d",&n,&m);
+    scanf("%d %d",&n,&m);
 	for(int i=0;i<n;i++) scanf("%d",&a[i]);
 	for(int i=0;i<m;i++) scanf("%d",&b[i]);
 	r=n-1; // right pointer
