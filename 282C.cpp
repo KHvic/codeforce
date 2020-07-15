@@ -1,9 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> colors;
-map<int, unordered_set<int>> neighbors;
-
 int main(){
     ios_base::sync_with_stdio(false);cin.tie(NULL);
     string a, b;
