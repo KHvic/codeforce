@@ -18,3 +18,22 @@ int main()
     // p*q^0+p*q^1+p*q^2+... where q = (1-p1)*(1-p2)
     // using geometric series limit => p/(1-q)
 }
+
+/*
+Let A = a/b, B = c/d
+Let C = ((1-A)*(1-B)), probability of my turn again
+R = A + C*R, probability of winning
+R = A/(1-C)
+*/
+
+// better solution based on math formula
+int solution2(){
+    fastio
+    double a, b, c, d;
+    cin >> a >> b >> c >> d;
+    double A = a/b, B = c/d;
+    double C = (1-A)*(1-B);
+    double R = A/(1-C);
+
+    cout << fixed << setprecision(10) << R;
+}
